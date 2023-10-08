@@ -1,0 +1,29 @@
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: url(../../../../assets/logo-frame.svg);
+    background-size: 100% 100%;
+}
+
+.box .group {
+    position: relative;
+    z-index: 1; /* Set a lower z-index for .group to place it below .img-layout */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centered-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../../../assets/logo-main-layout.png);
+  }
+.box .img-layout {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    
+}

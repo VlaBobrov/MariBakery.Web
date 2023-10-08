@@ -1,0 +1,63 @@
+.box-car {
+    position: relative;
+    width: 100%;
+    height: auto; /* Adjust the height as needed */
+    background-color: rgba(39, 46, 129, 1);
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between; /* To place text and image side by side */
+    align-items: center; /* To vertically center content */
+    padding: 20px; /* Add padding to space the content from the edges */
+}
+
+.car-text {
+    flex: 1; /* Take up available space */
+    text-shadow: 0px 4px 4px #00000040;
+    font-size: 2rem; /* Adjust the font size */
+    font-family: "Century Gothic-Bold", Helvetica;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.car-text h2 {
+    text-shadow: 0px 4px 4px #00000040;
+    font-family: "Century Gothic-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 1.5rem; /* Adjust the font size */
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.div-wrapper {
+    width: 333px;
+    height: 65px;
+    background-color: rgba(209, 138, 199, 1);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-wrapper-2 {
+    font-size: 1.5rem; /* Adjust the font size */
+    font-family: "Century Gothic-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.image-wrapper {
+    flex: 1; /* Take up available space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-car {
+    max-width: 100%; /* Make the image responsive */
+    height: auto;
+}

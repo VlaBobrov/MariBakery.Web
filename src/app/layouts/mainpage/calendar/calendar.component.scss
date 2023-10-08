@@ -1,0 +1,55 @@
+.calendar-container {
+    display: flex;
+    flex-direction: column; /* Arrange elements in a column */
+    align-items: center; /* Center elements horizontally */
+    text-align: center; /* Center text horizontally */
+    background-color: rgba(39, 46, 129, 1);
+    padding: 20px;
+}
+
+.text-top {
+    margin-bottom: 20px;
+}
+
+.text-bot {
+    margin-top: 20px;
+}
+
+h1 {
+    text-shadow: 0px 4px 4px #00000040;
+    font-family: "Century Gothic-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 64px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+h2 {
+    text-shadow: 0px 4px 4px #00000040;
+    font-family: "Century Gothic-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; /* Center the images horizontally */
+    align-items: center; /* Center the images vertically */
+}
+
+.image-row {
+    display: flex;
+    flex-wrap: wrap; /* Allow images to wrap to the next row */
+    justify-content: center; /* Center the images horizontally within the row */
+    align-items: center; /* Center the images vertically within the row */
+}
+
+.image-row img {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+}

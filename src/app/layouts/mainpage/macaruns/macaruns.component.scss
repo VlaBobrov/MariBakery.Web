@@ -1,0 +1,48 @@
+.component-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.text-center {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-family: "Century Gothic-Bold", Helvetica;
+    font-weight: 700;
+    color: #272e81;
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column; /* Change to column to stack rows vertically */
+    align-items: center;
+    max-width: 100%; /* Adjust this value to your preferred maximum width */
+    margin: 0 auto; /* Center the container */
+}
+
+.image-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap; /* Allow images to wrap to the next row */
+    justify-content: center; /* Center the rows horizontally */
+    gap: 105px; /* Adjust the gap between images */
+    max-width: 100%; /* Allow the row to take up the full width of the container */
+    box-sizing: border-box; /* Include padding in the max width calculation */
+}
+
+.image-row img {
+    width: 200px;
+height: 200px;
+    max-width: 52px 1%;
+    max-height: 52px 1%;
+    height: auto; /* Automatically adjust the height to maintain aspect ratio */
+}
