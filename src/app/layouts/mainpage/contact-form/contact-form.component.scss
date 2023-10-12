@@ -1,4 +1,4 @@
-/* Style for the container */
+
 .box-contact-us {
     display: flex;
     justify-content: space-between;
@@ -6,64 +6,65 @@
     height: 100vh; /* 100% of the viewport height */
     padding: 20px;
     max-width: 100%;
-    overflow: hidden;
     background-color: #d189c7;
   }
   
-
-  
-  /* Style for the image-wrapper */
   .image-wrapper {
     flex: 1; /* Take up 50% of the container width */
     display: flex;
     justify-content: center;
     align-items: center;
     max-width: 50%; /* Take up 50% of the .group width */
-    overflow: hidden;
   }
   
   /* Style for the contact form */
-  .contatct-form {
+  .contact-form {
     flex: 1; /* Take up 50% of the container width */
-    padding: 20px;
-    font-family: "Century Gothic-Bold", Helvetica;
-    color: #272e81;
+
     max-width: 50%; /* Take up 50% of the .group width */
-    overflow: hidden;
+    padding-right: 10%;
+    padding-left: 5%;
   }
   
   /* Style for the contact form headings */
-  .contatct-form h1.bold {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 10px;
+  .contact-form h1.bold {
+    color: #ffffff;
+    font-family: "Century Gothic-Bold", Helvetica;
+    font-size: 40px;
+    font-weight: 700;
   }
   
-  .contatct-form h2 {
-    font-size: 1rem;
-    font-weight: normal;
-    margin-bottom: 10px;
+  .contact-form h2 {
+    color: #ffffff;
+    font-family: "Century Gothic-Regular", Helvetica;
+    font-size: 30px;
+    font-weight: 400;
   }
   
-  /* Style for the contact form inputs */
-  .contatct-form input.subtitle {
+  .contact-form input.subtitle {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 10px;
-    border: 2px solid #272e81;
+    border: 2px solid;
     font-family: "Century Gothic-Regular", Helvetica;
-    font-size: 1rem;
+    font-size: 26px;
+    background: none;
+    border: 2px solid;
+    color:  #ffffff ;
+  }
+  .contact-form input.subtitle::placeholder {
+    color:  #ffffff; /* Set the placeholder text color to white */
   }
   
   /* Style for the contact form button */
-  .contatct-form .div-wrapper {
+
+  
+  .contact-form button.submit-button {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .contatct-form button.submit-button {
+    width: 100%;
     padding: 10px 20px;
     background-color: #272e81;
     color: #fff;
@@ -74,7 +75,11 @@
     font-size: 1rem;
   }
   
-  /* Style for the image inside image-wrapper */
+  button.submit-button:hover {
+    background-color: #141b6b;
+    box-shadow: 0px 4px 4px #00000040;
+    }
+  
   .image-contact-us {
     max-width: 100%;
     max-height: 100%;

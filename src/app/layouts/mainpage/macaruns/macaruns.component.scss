@@ -1,13 +1,13 @@
 .component-container {
     display: flex;
     flex-direction: column;
+    height: 100vh; /* 100% of the viewport height */
     align-items: center;
     text-align: center;
-    padding: 20px;
 }
 
 .text-center {
-    margin-bottom: 20px;
+    flex: 20;
 }
 
 h1 {
@@ -21,11 +21,10 @@ h1 {
 }
 
 .image-container {
-    display: flex;
+    flex: 80;
     flex-direction: column; /* Change to column to stack rows vertically */
     align-items: center;
     max-width: 100%; /* Adjust this value to your preferred maximum width */
-    margin: 0 auto; /* Center the container */
 }
 
 .image-row {
@@ -41,7 +40,7 @@ h1 {
 
 .image-row img {
     width: 200px;
-height: 200px;
+    height: 200px;
     max-width: 52px 1%;
     max-height: 52px 1%;
     height: auto; /* Automatically adjust the height to maintain aspect ratio */

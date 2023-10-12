@@ -1,63 +1,68 @@
 /* Style for the container */
 .box-about-us {
     display: flex;
-    flex-direction: column;
-    flex-direction: row; /* Arrange elements side by side */
-    min-height: 100vh;
+    justify-content: space-between;
     align-items: center;
-    background-color: #f2f0f0;
+    height: 100vh; /* 100% of the viewport height */
     padding: 20px;
-}
-
-/* Style for the about-us section */
-.box-about-us .about-us {
-    display: flex;
-
-    width: 100%;
     max-width: 100%;
-
-    padding: 20px;
-    box-sizing: border-box;
+    overflow: hidden;
+    background-color: #f2f0f0;
 }
-
+.image-about-us{
+    flex: 1; /* Take up 50% of the container width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%; /* Take up 50% of the .group width */
+    overflow: hidden;
+    background-image:  url(../../../../assets/about-us-circle.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center; 
+}
 /* Style for the about-us-text */
-.box-about-us .about-us-text {
+.about-us-text {
     flex: 1; /* Occupy 50% of the available width */
     text-align: left;
-    padding: 0 20px;
-    font-family: "Century Gothic-Bold", Helvetica;
+    padding:10% 10% 10% 10%;
+}
+
+.about-us-text h1.bold{
     color: #272e81;
+    font-family: "Century Gothic-Bold", Helvetica;
+    font-size: 60px;
+    font-weight: 700;
+    
+}
+.about-us-text h2{
+    color: #272e81;
+    font-family: "Century Gothic-Regular", Helvetica;
+    font-size: 24px;
+    font-weight: 400;  
 }
 
-/* Style for the circle container */
-.box-about-us .image-about-us .circle {
-    flex: 1; /* Occupy 50% of the available width */
+.about-us-text h2.bold{
+    color: #272e81;
+    font-family: "Century Gothic-Bold", Helvetica;
+    font-size: 24px;
+    font-weight: 700; 
+}
+.h2.welcome {
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    justify-content: center; /* Vertically center elements */
-    align-items: center; /* Horizontally center elements */
-    overflow: hidden; /* Hide overflow content */
-    background-color: #fff; /* Set the background color for the circle */
-    border-radius: 50%; /* Make it a circle */
-    position: relative;
+    align-items: center;
 }
 
-/* Style for the circle image */
-.box-about-us .image-about-us .circle img.circle-image {
-    max-width: 100%; /* Set the maximum width to fit the circle */
-    max-height: 100%; /* Set the maximum height to fit the circle */
-    border-radius: 50%; /* Make it a circle */
-    display: block; /* Display inside the circle */
+.text-container {
+    flex: 1;
 }
 
-/* Style for the image inside the circle */
-.box-about-us .image-about-us .image-inside-circle {
-    max-width: 100%; /* Set the maximum width to fit the circle */
-    max-height: 100%; /* Set the maximum height to fit the circle */
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
+.h2-bold {
+    display: flex;
+    align-items: center;
 }
+
+.h2-bold .text-container{
+    padding-left: 5%;
+}
+

@@ -14,11 +14,13 @@ export class CircleAnimationComponent  implements OnInit {
   public circe4ImagePath = new String(imagePath.imagePath+'cake4.png'); 
   public vectorImagePath = new String(imagePath.imagePath+'Vector.svg'); 
   
-  public arrowLImagePath = new String(imagePath.imagePath+'arrow-left.svg'); 
-  public arrowRImagePath = new String(imagePath.imagePath+'arrow-right.svg'); 
+  public arrowRImagePath = new String(imagePath.imagePath+'arrow-left.svg'); 
+  public arrowLImagePath = new String(imagePath.imagePath+'arrow-right.svg'); 
   public galeryImagePath = new String(imagePath.imagePath+'all-galery-button.png'); 
 
   currentImageIndex = 0;
+  rotationAngle = 0;
+  slideAmount = 0; // Initial slide amount
 
   imagePaths: String[] =  [
     this.circe1ImagePath,
@@ -27,6 +29,14 @@ export class CircleAnimationComponent  implements OnInit {
     this.circe4ImagePath
   ];
   
+  getAnimationStyle(index: number): any {
+    if (index === this.currentImageIndex) {
+      return { animation: 'none' };
+    } else {
+      return {};
+    }
+  }
+
   ngOnInit(): void  {
 
   }
@@ -36,12 +46,18 @@ export class CircleAnimationComponent  implements OnInit {
   }
 
   onArrowLeftClick(): void {
+    this.rotateImage(360); // Rotate counterclockwise by 360 degrees
     this.currentImageIndex =
-      (this.currentImageIndex - 1 + this.imagePaths.length) % this.imagePaths.length;
+    (this.currentImageIndex - 1 + this.imagePaths.length) % this.imagePaths.length;
   }
-
+  
   onArrowRightClick(): void {
+
+    this.rotateImage(-360); // Rotate clockwise by 360 degrees
     this.currentImageIndex = (this.currentImageIndex + 1) % this.imagePaths.length;
   }
+  
+  rotateImage(angle: number): void {
+    this.rotationAngle += angle; // Adjust the rotation angle
+  }
 }
-

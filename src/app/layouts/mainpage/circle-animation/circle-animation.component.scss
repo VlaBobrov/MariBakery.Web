@@ -1,204 +1,105 @@
-.frame {
+
+.circle-animation-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 60vh; /* 100% of the viewport height */
+    max-width: 100%;
     background-color: rgba(209, 138, 199, 1);
-    display: flex; /* Use flex display to arrange children */
-    flex-direction: column; /* Arrange children vertically */
-    align-items: center; /* Center children horizontally */
-    justify-content: center; /* Center children vertically */
-    height: 1457px;
-    overflow: hidden;
-    position: relative;
-    width: 1920px;
+
 }
 
-.frame .div {
-    height: 452px;
-    left: 975px;
-    position: absolute;
-    top: 739px;
-    width: 770px;
+.cake-circle{
+    flex: 1; /* Take up 50% of the container width */
+    max-width: 50%; /* Take up 50% of the .group width */
+    padding: 0px 0px 0px 0px;
+    .cake-image{
+        width: 670px;
+        height: 670px;
+    }
+    .cake-image.rotate-slide-animation {
+        transition: transform 2s ease;
+        transform-origin: left bottom;
+      }
+}
+.circle-animation-navigation {
+    flex: 1; /* Take up 50% of the container width */
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    .navigation-bar{
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 20px;
+        gap: 10px;
+        .nav-bar-element{
+            flex: 1;
+            color: #FFF;
+            text-align: left;
+            font-family: Century Gothic;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            cursor: pointer;
+            &:hover{
+                font-weight: 700;
+            }
+        }
+
+    }
+    .cake-info{
+        flex: 90;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        .cake-info-text{
+            flex: 70;
+        }
+        .rotation-elemnts{
+            flex: 30;
+            padding-top: 20px;
+            width: 100%;
+            .img{
+                margin-right: 10px; /* Adjust this value to set the desired gap */
+                width: 100%;
+                height: auto;
+                animation: rotate 5s linear infinite; /* Adjust the duration and animation type */
+                transform-origin: center;
+            }
+        }
+    }
+
+    .all-galery-button{
+        margin-left: 61%;
+        margin-bottom: 25px;
+    }
 }
 
-.frame .group-2 {
-    height: 303px;
-    left: 0;
-    position: absolute;
-    top: 149px;
-    width: 505px;
-}
-
-.frame .text-wrapper-2 {
-    color: rgba(255, 255, 255, 1);
+h1.bold{
+    color: white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: "Century Gothic-Bold", Helvetica;
     font-size: 50px;
+    font-style: normal;
     font-weight: 700;
-    height: 61px;
-    left: 0;
-    letter-spacing: 0;
     line-height: normal;
-    position: absolute;
-    text-shadow: 0px 4px 4px #00000040;
-    top: 0;
-    width: 334px;
 }
-
-.frame .p {
-    color: #ffffff;
+h2{
+    color: white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: "Century Gothic-Regular", Helvetica;
     font-size: 30px;
+    font-style: normal;
     font-weight: 400;
-    left: 0;
-    letter-spacing: 0;
     line-height: normal;
-    position: absolute;
-    text-shadow: 0px 4px 4px #00000040;
-    top: 81px;
-    width: 501px;
 }
-
-.frame .arrow-left {
-    height: 70px !important;
-    left: 700px !important;
-    position: absolute !important;
-    top: 149px !important;
-    width: 70px !important;
-}
-
-.frame .arrow-right {
-    height: 70px !important;
-    left: 610px !important;
-    position: absolute !important;
-    top: 149px !important;
-    width: 70px !important;
-}
-
-.frame .group-3 {
-    height: 59px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 712px;
-}
-
-.frame .vector {
-    height: 12px;
-    left: 39px;
-    position: absolute;
-    top: 47px;
-    width: 15px;
-}
-
-.frame .div-2 {
-    align-items: flex-start;
-    display: inline-flex;
-    gap: 70px;
-    left: 0;
-    position: absolute;
-    top: 0;
-}
-
-.frame .text-wrapper-3 {
-    color: #ffffff;
-    font-family: "Century Gothic-Bold", Helvetica;
-    font-size: 32px;
-    font-weight: 700;
-    letter-spacing: 0;
-    line-height: normal;
-    margin-top: -1px;
-    position: relative;
-    text-align: center;
-    width: fit-content;
-}
-
-.frame .text-wrapper-4 {
-    color: #ffffff;
-    font-family: "Century Gothic-Regular", Helvetica;
-    font-size: 32px;
-    font-weight: 400;
-    letter-spacing: 0;
-    line-height: normal;
-    margin-top: -1px;
-    position: relative;
-    text-align: center;
-    width: fit-content;
-}
-
-.frame .group-4 {
-    height: 1873px;
-    left: -937px;
-    position: absolute;
-    top: 521px;
-    width: 1873px;
-}
-
-.frame .overlap-group {
-    height: 1579px;
-    left: 321px;
-    position: absolute;
-    top: 0;
-    width: 1552px;
-}
-
-.frame .ellipse {
-    background-color: #dea6d6;
-    border-radius: 675.71px;
-    height: 1351px;
-    left: 0;
-    position: absolute;
-    top: 227px;
-    width: 1351px;
-}
-
-.frame .asr-mocha-hazelnut {
-    height: 936px;
-    left: 616px;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    width: 936px;
-}
-
-.frame .img {
-    height: 936px;
-    left: 944px;
-    object-fit: cover;
-    position: absolute;
-    top: 6229px;
-    width: 936px;
-}
-
-.frame .asr-mocha-hazelnut-2 {
-    height: 936px;
-    left: 944px;
-    object-fit: cover;
-    position: absolute;
-    top: 5293px;
-    width: 936px;
-}
-
-.frame .asr-mocha-hazelnut-3 {
-    height: 936px;
-    left: 2817px;
-    object-fit: cover;
-    position: absolute;
-    top: 7166px;
-    width: 936px;
-}
-
-.frame .text-wrapper-5 {
-    color: #ffffff;
-    font-family: "Century Gothic-Regular", Helvetica;
-    font-size: 30px;
-    font-weight: 400;
-    left: 975px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 1210px;
-    width: 129px;
-}
-
-.frame .all-galery-button {
-    left: 1487px !important;
-    position: absolute !important;
-    top: 1302px !important;
-}
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }

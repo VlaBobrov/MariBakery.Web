@@ -4,9 +4,7 @@
     justify-content: space-between;
     align-items: center;
     height: 100vh; /* 100% of the viewport height */
-    padding: 20px;
     max-width: 100%;
-    overflow: hidden;
     background: linear-gradient(
 180deg,
 rgb(219, 219, 219) 0%,
@@ -16,8 +14,11 @@ rgb(229, 229, 229) 56.02%,
 rgb(225, 225, 225) 79.23%,
 rgb(222, 222, 222) 100%
 );
-}
 
+}
+.gradient{
+    background: linear-gradient(180deg, rgb(242, 240, 240) 0%, rgba(242, 240, 240, 0) 100%);
+}
 /* Style for the image-wrapper */
 .image-wrapper {
     flex: 1; /* Take up 50% of the container width */
@@ -31,45 +32,44 @@ rgb(222, 222, 222) 100%
 /* Style for the taste-text */
 .taste-text {
     flex: 1; /* Take up 50% of the container width */
-    padding: 20px;
-    font-family: "Century Gothic-Bold", Helvetica;
-    color: #272e81;
     max-width: 50%; /* Take up 50% of the .box-taste width */
     overflow: hidden;
+    padding-left: 10%;
 }
 
 /* Style for the headings */
 .taste-text h1.bold {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 10px;
+    color: #272e81;
+    font-family: "Century Gothic-Bold", Helvetica;
+    font-size: 64px;
+    font-weight: 700;
 }
 
 .taste-text h2 {
-    font-size: 1rem;
-    font-weight: normal;
-    margin-bottom: 10px;
-}
-
-/* Style for the div-wrapper */
-.taste-text .div-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.taste-text .text-wrapper-2 {
-    padding: 10px 20px;
-    background-color:rgba(209, 138, 199, 1);;
-    color: #fff;
-    border-radius: 10px;
-    cursor: pointer;
-    font-family: "Century Gothic-Bold", Helvetica;
-    font-size: 1rem;
+    color: #272e81;
+    font-family: "Century Gothic-Regular", Helvetica;
+    font-size: 30px;
+    font-weight: 400;
 }
 
 /* Style for the image inside image-wrapper */
 .image-taste {
     max-width: 100%;
     max-height: 100%;
+}
+
+.box-taste button.submit-button {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: #d189c7;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: "Century Gothic-Bold", Helvetica;
+    font-size: 1rem;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 10px 20px;
 }
