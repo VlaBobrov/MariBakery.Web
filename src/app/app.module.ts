@@ -14,6 +14,7 @@ import { MacarunsComponent } from './layouts/mainpage/macaruns/macaruns.componen
 import { CarComponent } from './layouts/mainpage/car/car.component';
 import { CalendarComponent } from './layouts/mainpage/calendar/calendar.component';
 import { BigLogoComponent } from './layouts/mainpage/big-logo/big-logo.component';
+import { WavesComponent } from './layouts/mainpage/waves/waves.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { BigLogoComponent } from './layouts/mainpage/big-logo/big-logo.component
     MacarunsComponent,
     CarComponent,
     CalendarComponent,
-    BigLogoComponent
+    BigLogoComponent,
+    WavesComponent
   ],
   imports: [
     BrowserModule,
