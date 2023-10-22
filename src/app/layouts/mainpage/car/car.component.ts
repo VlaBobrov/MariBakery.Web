@@ -28,5 +28,10 @@ export class CarComponent implements OnInit  {
     // Observe when the element enters or exits the viewport
     observer.observe(this.elementRef.nativeElement);
   }
-
+  scrollToTargetComponent() {
+    const targetElement = document.getElementById('contact-component');
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 }

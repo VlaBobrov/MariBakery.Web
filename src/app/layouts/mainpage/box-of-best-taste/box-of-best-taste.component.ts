@@ -13,4 +13,10 @@ export class BoxOfBestTasteComponent implements OnInit{
   ngOnInit(): void  {
 
   }
+  scrollToTargetComponent() {
+    const targetElement = document.getElementById('contact-component');
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 }

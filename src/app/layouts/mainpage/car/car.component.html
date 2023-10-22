@@ -2,7 +2,7 @@
     <div class="car-text">
       <h1 class="bold">Безкоштовна доставка</h1>
       <h2> При замовленні від 300zl - доставка в подарунок</h2>
-      <button class="submit-button">ЗРОБИТИ ЗАМОВЛЕННЯ</button>
+      <button class="submit-button" (click)="scrollToTargetComponent()" >ЗРОБИТИ ЗАМОВЛЕННЯ</button>
     </div>
   
     <div class="image-wrapper" [ngClass]="{'slide-in': slideIn, 'slide-out': slideOut}">
