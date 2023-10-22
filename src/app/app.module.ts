@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './layouts/mainpage/footer/footer.component';
@@ -15,6 +16,13 @@ import { CarComponent } from './layouts/mainpage/car/car.component';
 import { CalendarComponent } from './layouts/mainpage/calendar/calendar.component';
 import { BigLogoComponent } from './layouts/mainpage/big-logo/big-logo.component';
 import { WavesComponent } from './layouts/mainpage/waves/waves.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgIf } from '@angular/common';
+import {MatButtonModule} from '@angular/material/button'
+import {MatGridListModule} from '@angular/material/grid-list';
+import { AssortmentComponent } from './layouts/assortment/assortment.component';
+
 
 @NgModule({
   declarations: [
@@ -30,11 +38,22 @@ import { WavesComponent } from './layouts/mainpage/waves/waves.component';
     CarComponent,
     CalendarComponent,
     BigLogoComponent,
-    WavesComponent
+    WavesComponent,
+    AssortmentComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatInputModule,
+    MatFormFieldModule,
+    FormsModule, 
+    MatFormFieldModule, 
+    MatInputModule, 
+    ReactiveFormsModule, 
+    NgIf,
+    MatButtonModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

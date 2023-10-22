@@ -1,16 +1,4 @@
-.component-container {
-    display: flex;
-    flex-direction: column;
-    height: 100vh; /* 100% of the viewport height */
-    align-items: center;
-    text-align: center;
-}
-
 .text-center {
-    flex: 20;
-}
-
-h1 {
     font-family: "Century Gothic-Bold", Helvetica;
     font-weight: 700;
     color: #272e81;
@@ -18,30 +6,69 @@ h1 {
     text-align: center;
     letter-spacing: 0;
     line-height: normal;
-}
-
-.image-container {
-    flex: 80;
-    flex-direction: column; /* Change to column to stack rows vertically */
-    align-items: center;
-    max-width: 100%; /* Adjust this value to your preferred maximum width */
-}
-
-.image-row {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    flex-wrap: wrap; /* Allow images to wrap to the next row */
-    justify-content: center; /* Center the rows horizontally */
-    gap: 105px; /* Adjust the gap between images */
-    max-width: 100%; /* Allow the row to take up the full width of the container */
-    box-sizing: border-box; /* Include padding in the max width calculation */
+    height: 100%;
+    padding-top: 5%;
 }
 
-.image-row img {
-    width: 200px;
-    height: 200px;
-    max-width: 52px 1%;
-    max-height: 52px 1%;
-    height: auto; /* Automatically adjust the height to maintain aspect ratio */
+.mat-grid-tile img {
+    max-width: 100%;
+    height: 100%;
+    max-height: 200px;    
+  }
+
+  .image-container {
+    align-items: center;
+    text-align: center;    
+  }
+
+  .mat-grid-list{
+    background-color: #F2F0F0;
+  }
+
+  .gradient{
+    height:100px;
+    background: linear-gradient(0deg, #DBDBDB, #F2F0F0);
+  }
+
+  .image-text{
+    color: #272E81;
+    font-size: 24px;
+    font-family: Century Gothic;
+    font-weight: 700;
+    line-height: 20px;
+    word-wrap: break-word;
+ }
+ 
+
+ .image-container .blur {
+  filter: blur(10px); /* Apply a blur effect to the image */
+}
+
+.image-text-click {
+  position: absolute;
+  font-family: "Century Gothic-Regular", Helvetica;
+  color: #272e81;
+  top: 50%; /* Adjust the positioning as needed */
+  left: 50%; /* Adjust the positioning as needed */
+  transform: translate(-50%, -50%); /* Center the text horizontally and vertically */
+  padding: 10px;
+}
+.image-container::hover .blur {
+  filter: none; /* Remove the blur effect on hover */
+}
+
+.image-container .image-text-click {
+  display: none; /* Hide text by default */
+}
+
+.image-container:hover .image-text-click {
+  display: block; /* Show text on hover */
+}
+
+.image-container::hover img {
+  mix-blend-mode: color-burn; /* Apply a color burn-like effect on hover */
 }

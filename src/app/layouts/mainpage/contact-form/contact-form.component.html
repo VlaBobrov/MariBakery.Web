@@ -8,12 +8,29 @@
         
         <h2>Залиште ваші контакти</h2>
         
-        <input class="subtitle" placeholder="Name" />
-        <input class="subtitle" placeholder="Phone Number" />
-        
- 
-        <button class="submit-button">ЗРОБИТИ ЗАМОВЛЕННЯ</button>
-      </div>
+        <div class="form-container">
 
+        <form class="example-form">
+          <mat-form-field  appearance="outline" subscriptSizing="dynamic" class="example-full-width">
+            <mat-label>Ім'я</mat-label>
+            <input class="rounded-input" autocomplete="off"  type="name" matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher">
+            <mat-error *ngIf="emailFormControl.hasError('required')">
+            <strong>Required</strong>
+            </mat-error>
+          </mat-form-field>
+
+          <mat-form-field  appearance="outline" subscriptSizing="dynamic" class="example-full-width">
+            <mat-label >Номер телефону</mat-label>
+            <input class="rounded-input" autocomplete="off" type="tel" matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher">
+            <mat-error *ngIf="nameFormControl.hasError('required')">
+              <strong>Required</strong>
+            </mat-error>
+          </mat-form-field>
+        </form>
+          
+        <button class="submit-button" mat-raised-button color="primary">ЗРОБИТИ ЗАМОВЛЕННЯ</button>
+        </div>
+      
+      </div>
   </div>
   

@@ -20,7 +20,13 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center; 
+    padding-left:10%;
+    padding-right:10%;
 }
+.image-inside-circle {
+    max-width: 100%; /* Make the image responsive within its container */
+    height: auto; /* Maintain the image's aspect ratio */
+  }
 /* Style for the about-us-text */
 .about-us-text {
     flex: 1; /* Occupy 50% of the available width */

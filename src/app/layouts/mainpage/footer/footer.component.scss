@@ -1,27 +1,16 @@
-.box_footer {
-  display: flex;
-  flex-direction: column;
-}
-
-.box_footer  .footer {
+.footer {
   background-color: #272e81;
   color: #ffffff;
   text-align: center;
-  padding: 20px;
   margin-top: auto;
 }
 
-.box_footer  .flex-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.box_footer  .mail-footer,
-.box_footer .phone-number-footer {
+.mail-footer,
+.phone-number-footer {
   font-family: "Century Gothic-Regular", Helvetica;
   font-weight: 400;
   letter-spacing: 0;
+  font-size: 28px;
   line-height: normal;
   flex: 1; /* Allow them to grow and occupy equal space */
   text-align: center; /* Center text content */
@@ -29,33 +18,41 @@
   white-space: nowrap; /* Prevent text from wrapping */
 }
 
-.box_footer  .image-footer {
-  flex: 1; /* Allow it to grow and occupy equal space */
-  max-width: 30%; /* Limit the maximum width as a percentage of the container */
-  display: flex;
-  flex-direction: column; /* Stack content vertically */
-  justify-content: center; /* Center content vertically */
-  align-items: center; /* Center content horizontally */
-  padding: 10px; /* Add padding to create space */
+img {
+  max-width: 100%;
 }
 
-.box_footer  .image-footer img {
-  max-width: 100%; /* Ensure the image scales within the container */
-}
+@media screen and (max-width: 390px) {
+  /* Adjust styles for smaller screens here */
+  .footer {
+    padding: 20px; /* Add some padding to the footer for spacing */
+  }
 
-/* Auto-size the font within .text-wrapper and .subtitle */
-.box_footer  .mail-footer,
-.box_footer  .phone-number-footer {
-  font-size: 1rem; /* Set a base font size */
-  max-width: 100%; /* Allow text to scale within its container */
-  white-space: nowrap; /* Prevent text from wrapping */
-  overflow: hidden; /* Hide overflow content if necessary */
-}
+  .group {
+    max-width: 100%;
+    margin-bottom: 20px; /* Add spacing between the image and contact info */
+  }
 
-/* Media query for responsiveness - adjust font-size as needed */
-@media screen and (max-width: 768px) {
-  .box_footer  .mail-footer,
-  .box_footer  .phone-number-footer {
-    font-size: 0.8rem; /* Adjust font size for smaller screens */
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Century Gothic-Regular", Helvetica;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .underline {
+    width: 50px;
+    height: 2px;
+    background-color: #ffffff;
+    margin-bottom: 10px; /* Add spacing between the underline and text */
+  }
+
+  .mail-footer,
+  .phone-number-footer {
+    font-size: 20px; /* Decrease the font size for smaller screens */
   }
 }
+
+

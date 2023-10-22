@@ -42,10 +42,6 @@
     align-items: center;
 }
 
-.image-car {
-    max-width: 100%; /* Make the image responsive */
-    height: auto;
-}
 
 .box-car button.submit-button {
     display: flex;
@@ -62,3 +58,34 @@
     font-weight: 700;
     padding: 10px 20px;
 }
+
+.slide-in {
+    animation: slideIn 3s forwards;
+  }
+  
+.slide-out {
+    animation: slideOut 3s forwards;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideOut {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(100%);
+    }
+  }
+
+  .submit-button{
+    height: 65px; /* Adjust the value to control the roundness */
+    max-height: 100%;
+  }

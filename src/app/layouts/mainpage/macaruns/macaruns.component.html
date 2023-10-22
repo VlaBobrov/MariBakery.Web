@@ -1,23 +1,17 @@
-<div class="component-container">
-    <div class="text-center">
-        <h1>Макарунси</h1>
-    </div>
-    <div class="image-container">
-        <div class="image-row">
-            <!-- Row 1 -->
-            <img src="{{ macaroon1ImagePath }}" alt="Image 1" />
-            <img src="{{ macaroon2ImagePath }}" alt="Image 2" />
-            <img src="{{ macaroon3ImagePath }}" alt="Image 3" />
-            <img src="{{ macaroon4ImagePath }}" alt="Image 4" />
-            <img src="{{ macaroon5ImagePath }}" alt="Image 5" />
-        </div>
-        <div class="image-row">
-            <!-- Row 2 -->
-            <img src="{{ macaroon6ImagePath }}" alt="Image 6" />
-            <img src="{{ macaroon7ImagePath }}" alt="Image 7" />
-            <img src="{{ macaroon8ImagePath }}" alt="Image 8" />
-            <img src="{{ macaroon9ImagePath }}" alt="Image 9" />
-            <img src="{{ macaroon10ImagePath }}" alt="Image 10" />
-        </div>
-    </div>
-</div>
+<mat-grid-list cols="5" rowHeight="1:1" >
+    <mat-grid-tile-header class="text-center"> Макарунси</mat-grid-tile-header>
+    
+    <mat-grid-tile *ngFor="let imagePath of imagePaths; let i = index">
+        <div class="image-container" (mouseenter)="isBlurred[i] = true" (mouseleave)="isBlurred[i] = false">
+            <img [src]="imagePath" alt="Image {{ i + 1 }}" class="image" [ngClass]="{ 'blur': isBlurred[i] }">
+            <div class="image-text">{{ textDescriptions[i] }}</div>
+            <div class="image-text-click" *ngIf="isBlurred[i]">Та будь-який смак:</div>
+          </div>
+    </mat-grid-tile>
+
+    <mat-grid-tile-footer class="gradient"> </mat-grid-tile-footer>
+</mat-grid-list>
+
+
+    
+<div class="gradient"></div>

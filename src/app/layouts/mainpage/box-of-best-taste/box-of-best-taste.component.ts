@@ -8,7 +8,7 @@ import { imagePath } from '../../../../constants/my-constants';
 })
 export class BoxOfBestTasteComponent implements OnInit{
    
-  public tasteImagePath = new String(imagePath.imagePath+'1.png');   
+  public tasteImagePath = new String(imagePath.imagePath+'123.png');   
   
   ngOnInit(): void  {
 

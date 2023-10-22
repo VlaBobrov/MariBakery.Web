@@ -1,0 +1,156 @@
+.mat-grid-tile img {
+    max-width: 100%;
+    height: 100%;
+    max-height: 410px;    
+  }
+
+  .image-container {
+    display: flex;
+    align-items: center;
+    text-align: center;    
+    background: white; 
+    border-radius: 15%; /* Increase the border-radius for a more circular appearance */
+    max-width: 800px;
+  }
+  .assortment-container{
+    background: #F2F0F0;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 250px;
+  }
+.navbar-header{
+  background: #F2F0F0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px; /* Add padding for spacing */
+  z-index: 1000; /* Ensure the header stays above other content */
+}
+.image-text,
+.image{
+    flex: 1;
+}
+
+.image {
+  transition: transform 5s; /* Smooth transition for image changes */
+}
+
+.text-center {
+    font-family: "Century Gothic-Bold", Helvetica;
+    font-weight: 700;
+    color: #272e81;
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-top: 5%;
+}
+
+.header {
+    color: #272e81;
+    font-size: 24px;
+    font-family: "Century Gothic-Regular", Helvetica;
+    justify-content: center;
+    h2 {
+        font-weight: 400;
+        align-self: center;
+        cursor: pointer;
+        &:hover{
+            font-weight: 700;
+        }
+    }
+  }
+.flex {
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items:center;
+}
+
+.noselect{
+    padding-right: 70px;
+}
+
+.image-text-price,
+.image-text-description{
+    color: #272E81;
+font-size: 20px;
+font-family: Century Gothic;
+font-weight: 700;
+word-wrap: break-word
+}
+
+.image-text-name{
+    color: #272E81;
+    font-size: 34px;
+    font-family: Century Gothic;
+    font-weight: 700;
+    word-wrap: break-word; 
+}
+.image-text {
+    text-align: left; /* Align text to the left within the container */
+  }
+.image-text div {
+    display: block; /* This makes each <div> stack vertically (one under another) */
+    margin-bottom: 20px; /* Add space (margin) between the text elements */
+}
+.list{
+    padding-top:3%;
+}
+  
+  .circle-button {
+    position: absolute;
+    top: 60px; /* Adjust top and right values for positioning */
+    right: 5%;
+    width: 60px;
+    height: 60px;
+    background-color: #272E81;
+    border: none;
+    border-radius: 50%; /* Makes the button circular */
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    overflow: hidden; /* Clip any overflowing content */
+  
+}
+  .circle-button::before {
+    content: "✕"; /* Use the "X" symbol */
+    display: block;
+    text-align: center;
+    line-height: 40px; /* Vertically center the "X" */
+    font-size: 24px;
+    color: white;
+  }
+
+  .submit-button{
+    height: 65px; /* Adjust the value to control the roundness */
+    max-height: 100%;
+    padding: 10px 20px !important;
+}
+button.submit-button {
+  display:block;
+  background-color: #d189c7;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "Century Gothic-Bold", Helvetica;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.button-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 90px;
+  padding-bottom: 90px;
+
+}

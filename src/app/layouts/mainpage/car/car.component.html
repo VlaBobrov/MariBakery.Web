@@ -1,13 +1,11 @@
 <div class="box-car">
     <div class="car-text">
-        <h1 class="bold">Безкоштовна доставка</h1>
-        <h2> При замовленні від 300zl - доставка в подарунок</h2>
-        
-        <button class="submit-button">ЗРОБИТИ ЗАМОВЛЕННЯ</button>
+      <h1 class="bold">Безкоштовна доставка</h1>
+      <h2> При замовленні від 300zl - доставка в подарунок</h2>
+      <button class="submit-button">ЗРОБИТИ ЗАМОВЛЕННЯ</button>
     </div>
-
-    <div class="image-wrapper">
-        <img class="image-car" src="{{ carImagePath }}" alt="" />
+  
+    <div class="image-wrapper" [ngClass]="{'slide-in': slideIn, 'slide-out': slideOut}">
+      <img class="image-car" src="{{ carImagePath }}" alt="" />
     </div>
-    
-</div>
+  </div>

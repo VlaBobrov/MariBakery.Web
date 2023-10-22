@@ -18,6 +18,36 @@ export class MacarunsComponent  implements OnInit  {
   public macaroon9ImagePath = new String(imagePath.imagePath+'macaroon9.png');   
   public macaroon10ImagePath = new String(imagePath.imagePath+'macaroon10.png');   
     
+  imagePaths = [
+    this.macaroon1ImagePath,
+    this.macaroon2ImagePath,
+    this.macaroon3ImagePath,
+    this.macaroon4ImagePath,
+    this.macaroon5ImagePath,
+    this.macaroon6ImagePath,
+    this.macaroon7ImagePath,
+    this.macaroon8ImagePath,
+    this.macaroon9ImagePath,
+    this.macaroon10ImagePath
+  ];
+  textDescriptions: string[] = [
+    'Троянда',
+    'Манго',
+    'Фісташка',
+    'Манго',
+    'Капучіно',
+    'Маракуйя',
+    'Ваніль',
+    'Дор Блю',
+    'Карамель',
+    'Персик'
+  ];
+  isBlurred: boolean[] = Array(this.imagePaths.length).fill(false);
+
+  toggleText(index: number) {
+    this.isBlurred[index] = !this.isBlurred[index];
+  }
+
   ngOnInit(): void  {
 
   }

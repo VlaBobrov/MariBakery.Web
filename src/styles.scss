@@ -1,4 +1,38 @@
-/* You can add global styles to this file, and also import other style files */
-.body{
-    margin: 0x;
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@use '@angular/material' as mat;
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+
+
+html, body { height: 100%; }
+body { margin: 0; }
+
+/* Media query for screens with a maximum width of 389px */
+@media screen and (max-width: 390px) {
+  body {
+    font-size: 14px; /* Decrease font size for smaller screens */
+  }
+
+  .container {
+    width: 50%; /* Make the container take up only half of the screen width */
+  }
+
+  app-root {
+    width: 100%; /* Change the width of app-root when the screen width is less than 389px */
+  }
 }
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('./assets/fonts/century-gothic/CenturyGothic.ttf') format('ttf');
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  $font-primary: 'Century Gothic', sans-serif;
+
