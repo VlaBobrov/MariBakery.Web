@@ -10,8 +10,16 @@
 @include mat.core();
 
 
-html, body { height: 100%; }
-body { margin: 0; }
+html, body {
+  margin:0;
+  padding:0; 
+}
+body, span { 
+  margin: 0;
+  font-family: 'Century Gothic'; 
+  font-weight: lighter;
+  letter-spacing: 0.07rem;
+}
 
 /* Media query for screens with a maximum width of 389px */
 @media screen and (max-width: 390px) {
@@ -22,17 +30,11 @@ body { margin: 0; }
   .container {
     width: 50%; /* Make the container take up only half of the screen width */
   }
-
-  app-root {
-    width: 100%; /* Change the width of app-root when the screen width is less than 389px */
-  }
 }
 @font-face {
     font-family: 'Century Gothic';
-    src: url('./assets/fonts/century-gothic/CenturyGothic.ttf') format('ttf');
-    font-weight: 300;
-    font-style: normal;
+    src: url('./assets/fonts/century-gothic/Century_Gothic.ttf');
   }
 
-  $font-primary: 'Century Gothic', sans-serif;
+  $font-primary: 'Century Gothic';
 
