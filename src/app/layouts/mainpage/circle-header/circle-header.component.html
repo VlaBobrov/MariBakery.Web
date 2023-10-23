@@ -1,0 +1,65 @@
+<div class="header-circle-container">   
+
+<div #header class="header flex">
+    <h2 class="noselect start assort" 
+    (click)="addHeart()">Асортимент
+    </h2>
+ 
+    <h2 class="noselect start" >Макарунс</h2>
+    <h2 class="noselect end">Про нас</h2>
+    <h2 class="noselect end">Замовити</h2>
+    <h2 class="noselect end">
+        <div class="text-wrapper-4">🇺🇦</div>
+    </h2>
+    <h2 class="noselect end">
+        <img class="instagram" src="{{ headerInstaImagePath }}" alt="" />
+    </h2>
+</div>
+<img #heart alt="" >  
+
+<div className="box">
+    <div className="group" >
+        <div class="centered-img">
+            <img class="img-layout" alt="Group" src="{{ logoMainImagePath }}" />
+          </div>
+    </div>
+</div>
+</div>
+<div class="circle-animation-box">
+    
+    <div class="cake-circle">
+      <img class="cake-image rotate-slide-animation" [src]="currentImagePath" [style.transform]="'rotate(' + rotationAngle + 'deg) '"/>    
+    </div>
+  
+  
+    <div class="circle-animation-navigation">
+      <div class="navigation-bar">
+        <!--<img class="vector" alt="Vector" src="{{ vectorImagePath }}" />-->
+  
+          <div class="nav-bar-element">Торти</div>
+          <div class="nav-bar-element">Чізкейки</div>
+          <div class="nav-bar-element" >Тістечка</div>
+          <div class="nav-bar-element">Капкейки</div>
+  
+      </div>
+  
+        <div class="cake-info">
+          <div class="cake-info-text">
+            <h1 class="bold"> Медовик</h1>
+            <h2> Ніжні медові коржі у поєднанні із заварним кремом.</h2>
+            <h2> Виконується на будь-який смак: класичний, фісташковий, з чорносливом, шоколадний</h2>
+            <h2>80 zl/кг</h2>
+          </div>
+  
+          <div class="rotation-elemnts">
+            <img class="arrow-right"  src="{{ arrowRImagePath }}" (click)="onArrowRightClick()"/>
+            <img class="arrow-left" src="{{ arrowLImagePath }}" (click)="onArrowLeftClick()"/>
+  
+          </div>
+  
+        </div>
+        <img class="all-galery-button" src="{{ galeryImagePath }}"  [routerLink]="'/assortment'"/>
+   
+    </div>
+  </div>
+

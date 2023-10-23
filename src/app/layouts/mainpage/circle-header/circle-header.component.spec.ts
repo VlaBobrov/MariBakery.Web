@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { WavesComponent } from './waves.component';
+import { CircleHeaderComponent } from './circle-header.component';
 
-describe('WavesComponent', () => {
-  let component: WavesComponent;
-  let fixture: ComponentFixture<WavesComponent>;
+describe('CircleHeaderComponent', () => {
+  let component: CircleHeaderComponent;
+  let fixture: ComponentFixture<CircleHeaderComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ WavesComponent ]
+      declarations: [ CircleHeaderComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(WavesComponent);
+    fixture = TestBed.createComponent(CircleHeaderComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

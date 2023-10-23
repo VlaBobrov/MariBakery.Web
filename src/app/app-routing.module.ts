@@ -5,6 +5,7 @@ import { AssortmentComponent } from './layouts/assortment/assortment.component';
 import {ContactFormComponent } from './layouts/mainpage/contact-form/contact-form.component';
 
 const routes: Routes = [
+  {path: '', component: MainpageComponent},
   {path: 'mainpage', component: MainpageComponent},
   {path: 'assortment', component: AssortmentComponent},
   {path: 'contactform', component: ContactFormComponent}

@@ -15,13 +15,13 @@ import { MacarunsComponent } from './layouts/mainpage/macaruns/macaruns.componen
 import { CarComponent } from './layouts/mainpage/car/car.component';
 import { CalendarComponent } from './layouts/mainpage/calendar/calendar.component';
 import { BigLogoComponent } from './layouts/mainpage/big-logo/big-logo.component';
-import { WavesComponent } from './layouts/mainpage/waves/waves.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgIf } from '@angular/common';
 import {MatButtonModule} from '@angular/material/button'
 import {MatGridListModule} from '@angular/material/grid-list';
 import { AssortmentComponent } from './layouts/assortment/assortment.component';
+import { CircleHeaderComponent } from './layouts/mainpage/circle-header/circle-header.component';
 
 
 @NgModule({
@@ -38,8 +38,9 @@ import { AssortmentComponent } from './layouts/assortment/assortment.component';
     CarComponent,
     CalendarComponent,
     BigLogoComponent,
-    WavesComponent,
-    AssortmentComponent
+    
+    AssortmentComponent,
+    CircleHeaderComponent
   ],
   imports: [
     BrowserModule,
