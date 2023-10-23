@@ -58,3 +58,50 @@
     height: 65px; /* Adjust the value to control the roundness */
     max-height: 100%;
 }
+
+@media screen and (max-device-width: 390px) {
+
+.box-taste {
+    display: flex;
+    justify-content:flex-start;
+    flex-direction: column;
+    align-items: center;
+    height: 72%; 
+    max-width: 100%;
+    background: linear-gradient(180deg, #DBDBDB 0%, #E1E1E1 18%, #E6E6E6 35%, #E5E5E5 56%, #E1E1E1 79%, #DEDEDE 100%)
+}
+
+
+.image-taste {
+    flex: 1; 
+    max-width: 100%; 
+    height: 100%; 
+}
+
+
+.taste-text {
+    flex: 1; 
+    max-width: 100%; 
+}
+
+.box-taste button.submit-button {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: #d189c7;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: "Century Gothic-Bold", Helvetica;
+    font-size: 1rem;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 10px 20px;
+}
+.submit-button{
+    height: 65px; 
+    max-height: 100%;
+}
+
+}

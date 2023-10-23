@@ -22,36 +22,57 @@ img {
   max-width: 100%;
 }
 
-@media screen and (max-width: 390px) {
-  /* Adjust styles for smaller screens here */
-  .footer {
-    padding: 20px; /* Add some padding to the footer for spacing */
+.footer-mobile{
+  display: none;
+}
+
+@media screen and (max-device-width: 390px) {
+
+  .footer{
+    display: none;
   }
 
-  .group {
-    max-width: 100%;
-    margin-bottom: 20px; /* Add spacing between the image and contact info */
+  .footer-mobile{
+    position: relative;
+    display: block;
+    background-color: #272e81;
+    color: #ffffff;
+    text-align: center;
+    margin-top: auto;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
   }
-
-  .contact-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  img{
+      width: 80%;
+  }
+  .numbers,
+  .social{
     font-family: "Century Gothic-Regular", Helvetica;
     font-weight: 400;
-    text-align: center;
+    letter-spacing: 0;
+    font-size: 28px;
+    line-height: normal;
+    flex: 1; /* Allow them to grow and occupy equal space */
+    overflow: hidden; /* Hide overflow content if necessary */
+    white-space: nowrap; /* Prevent text from wrapping */
   }
 
-  .underline {
-    width: 50px;
-    height: 2px;
-    background-color: #ffffff;
-    margin-bottom: 10px; /* Add spacing between the underline and text */
+  .numbers{
+    padding-right: 40px;
+    text-align: right;
+  }
+  .social{
+    padding-left: 40px;
+    text-align: left;
   }
 
-  .mail-footer,
-  .phone-number-footer {
-    font-size: 20px; /* Decrease the font size for smaller screens */
+  .line {
+    position: absolute;
+    top: 50%; /* Position at the vertical center */
+    transform: translateY(-50%); /* Adjust for the line's height */
+    width: 100%; /* Line spans the full width */
+    height: 2px; /* Adjust the line thickness as needed */
+    background-color: white; /* Set the line's color */
   }
 }
 

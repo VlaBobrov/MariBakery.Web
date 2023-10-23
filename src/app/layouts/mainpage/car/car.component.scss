@@ -89,3 +89,31 @@
     height: 65px; /* Adjust the value to control the roundness */
     max-height: 100%;
   }
+
+  @media screen and (max-device-width: 390px) {
+
+    .box-car {
+      position: relative;
+      width: 100%;
+      height: 60vh; /* 100% of the viewport height */
+      background-color: rgba(39, 46, 129, 1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* To vertically center content */
+  }
+  .slide-in {
+    animation: slideIn 3s forwards;
+    animation-delay: 1.5s; /* Delay the animation by 1.5 seconds */
+    transform: translateX(100%); /* Initially position the image outside the viewport */
+  }
+  
+  @keyframes slideOut {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0%); /* Slide the image to 50% of its width */
+    }
+  }
+}

@@ -10,10 +10,9 @@ import { imagePath } from '../../../../constants/my-constants';
 export class FooterComponent  implements OnInit {
   
   public footerImagePath = new String(imagePath.imagePath+'group-3183.png');
-
   constructor() {}
 
   ngOnInit(): void  {
-
   }
+
 }

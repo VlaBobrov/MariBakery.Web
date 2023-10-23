@@ -3,7 +3,7 @@
     height: 6%;
     position: absolute;
     width: 80%;
-    margin-left: 18%;
+    margin-left: 12%;
     background-color: transparent;
     font-size: 24px;
     font-family: 'Century Gothic';
@@ -11,7 +11,7 @@
     justify-content: space-between;
     .spacer {
         color: transparent;
-        width: 5rem;
+        width: 10rem;
     }
     h2 {
         color: #272e81 !important;
@@ -60,22 +60,7 @@
 }
 
 
-.box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    padding-bottom: 5rem;
-    background-color: #F2F0F0;
-}
 
-.box .group {
-    position: relative;
-    z-index: 1; /* Set a lower z-index for .group to place it below .img-layout */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .centered-img {
     display: flex;
@@ -83,6 +68,8 @@
     align-items: center;
     background-image: url(../../../../assets/logo-main-layout.png);
     background-color: #F2F0F0;
+    height: 100%;
+    width: 100%;
 }
 .box .img-layout {
     position: absolute;
@@ -122,9 +109,11 @@
             transition: transform 2s ease-in-out;
             transform-origin: center;
             z-index: 1;
+            
         }
     }
 }
+
 .circle-animation-navigation {
     flex: 1; /* Take up 50% of the container width */
     justify-content: center;
@@ -208,17 +197,29 @@ h2{
     align-items: center;
     // height: 80vh; /* 100% of the viewport height */
     max-width: 100%;
-    padding-bottom: 6rem;
     background-color: rgba(209, 138, 199, 1);
 }
 
+.quater-circle{
+    width: 300px; /* Adjust the width to your needs */
+    height: 300px; /* Adjust the height to your needs */
+    background-color: #272e81; /* Background color for the entire component */
+    /* Create a circular shape */
+
+    z-index: 11;
+    border-radius: 0 300px 0 0;
+    bottom: 0;
+    left: 0;
+  }
+
+
 .header-circle-container {
     content: "";
-    height: 100%;
     max-width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color:  rgba(209, 138, 199, 1);
+    background: linear-gradient(#F2F0F0 50%, rgba(209, 138, 199, 1) 50%);
+    background-size: 100% 100%; /* Cover the entire viewport */
     padding-bottom: 10rem;
     .waves{    
         width: 100%;

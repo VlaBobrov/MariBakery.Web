@@ -14,25 +14,26 @@
   <img #heart alt="" />
 
   <div className="box">
-    <div className="group">
       <div class="centered-img">
         <img class="img-layout" alt="Group" src="{{ logoMainImagePath }}" />
       </div>
-    </div>
   </div>
-  <img class="waves" src="wave.svg" />
+  <img class="waves" src="../../../../assets/wave.svg" />
 </div>
 <div class="circle-animation-box">
   <div class="cake-circle-container">
     <div class="pan"></div>
+ 
     <div
       class="cake-circle"
       [style.transform]="'rotate(' + rotationAngle + 'deg)'"
     >
+
       <img
         class="cake-image"
         [src]="currentImagePath"
         [style.transform]="'rotate(' + -rotationAngle * 3 + 'deg)'"
+        
       />
     </div>
     <!-- <div
@@ -65,6 +66,9 @@
         [style.transform]="'rotate(' + -rotationAngle * 3 + 'deg)'"
       />
     </div> -->
+  
+  
+ 
   </div>
 
   <div class="circle-animation-navigation">
@@ -110,4 +114,7 @@
       [routerLink]="'/assortment'"
     />
   </div>
+
+
 </div>
+

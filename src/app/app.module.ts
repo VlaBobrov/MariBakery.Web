@@ -40,7 +40,8 @@ import { CircleHeaderComponent } from './layouts/mainpage/circle-header/circle-h
     BigLogoComponent,
     
     AssortmentComponent,
-    CircleHeaderComponent
+    CircleHeaderComponent,
+    
   ],
   imports: [
     BrowserModule,

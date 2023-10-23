@@ -1,10 +1,29 @@
 <div class="footer">
         
-<mat-grid-list cols="3" rowHeight="2:1">
+<mat-grid-list cols="3" rowHeight="2:1" >
   <mat-grid-tile>  <div class="mail-footer">maribakery.wroclaw@gmail.com</div></mat-grid-tile>
-  <mat-grid-tile>  <img class="group" src="{{ footerImagePath }}" />
-    <div class="underline"></div></mat-grid-tile>
+  <mat-grid-tile>  <img class="group" src="{{ footerImagePath }}" /></mat-grid-tile>
   <mat-grid-tile>  <div class="phone-number-footer">+38 099 000 00 00</div></mat-grid-tile>
 </mat-grid-list>
 
+</div>
+
+
+<div class="footer-mobile">
+  <div class="line"></div>
+  <mat-grid-list cols="1" rowHeight="3:1" [gutterSize]="'10px'">
+    <mat-grid-tile>  <img class="group" src="{{ footerImagePath }}" /></mat-grid-tile>
+
+    <mat-grid-tile class="footer-info">  
+      
+      <div class="social">
+        <p>Instagram</p>
+        <p>@mari_bakery</p>
+      </div>
+      <div class="numbers">
+        <p>+38 099 000 00 00</p>
+        <p>+48 099 000 00 00</p>
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
 </div>

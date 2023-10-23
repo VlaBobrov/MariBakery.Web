@@ -72,3 +72,33 @@
 .image-container::hover img {
   mix-blend-mode: color-burn; /* Apply a color burn-like effect on hover */
 }
+.mobile{
+  display: none;
+}
+@media screen and (max-device-width: 390px) {
+
+  .mobile{
+    display: block;
+    position: relative;
+  }
+  .normal{
+    display: none;
+  }
+  /* Adjust the size of the grid tiles and the layout */
+mat-grid-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Adjust the width of the images to fill the grid tile */
+.image {
+  max-width: 100%;
+}
+.gradient{
+  height:100px;
+  background: linear-gradient(0deg, #DEDEDE, #F2F0F0);
+}
+
+}

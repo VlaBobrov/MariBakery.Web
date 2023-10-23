@@ -72,3 +72,16 @@
     padding-left: 5%;
 }
 
+@media screen and (max-device-width: 390px) {
+    .box-about-us{
+        flex-direction: column;
+        
+    }
+    .image-inside-circle{
+        margin-left: 20px;
+        height: 80%;
+        width: 500px;
+        max-width: fit-content;
+    }
+  }
+  

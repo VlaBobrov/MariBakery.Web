@@ -61,7 +61,7 @@
     width: 100%;
   }
 
-  .contact-form button.submit-button {
+  .contact-form .submit-button {
     width: 100%;
     padding: 10px 20px;
     background-color: #272e81;
@@ -73,7 +73,7 @@
     font-size: 1rem;
   }
   
-  button.submit-button:hover {
+.submit-button:hover {
     background-color: #141b6b;
     box-shadow: 0px 4px 4px #00000040;
 
@@ -115,4 +115,82 @@ h2{
 .submit-button {
   height: 75px; /* Adjust the value to control the roundness */
   max-height: 100%;
+}
+
+@media screen and (max-device-width: 390px) {
+
+   .submit-button mdc-button mdc-button--raised mat-mdc-raised-button mat-primary mat-mdc-button-base {
+      height: 62px !important;  
+    }
+  .box-contact-us {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    height: 70%; 
+    max-width: 100%;
+    background-color: #d189c7;
+  }
+  
+  .image-wrapper {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%; 
+    padding: 0%;
+  }
+  
+  .contact-form {
+    display:block;
+    height: 100%;
+    max-width: 80%; 
+    padding: 0%;
+  }
+ 
+  .image-contact-us {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+
+  .contact-form .submit-button {
+    width: 100%;
+    background-color: #272e81;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: "Century Gothic-Bold", Helvetica;
+    font-size: 2rem;
+  }
+  
+.submit-button:hover {
+    background-color: #141b6b;
+    box-shadow: 0px 4px 4px #00000040;
+
+    }
+
+h2{
+  padding-bottom: 0px;
+}
+
+.example-form input{
+  height: 75px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 40%; /* Ensure the container takes the full height of its parent */
+}
+
+.contact-form{
+  order: 1;
+}
+
+.image-wrapper{
+  order:2;
+}
 }
