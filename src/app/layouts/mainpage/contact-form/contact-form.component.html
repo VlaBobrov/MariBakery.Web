@@ -14,17 +14,12 @@
           <mat-form-field  appearance="outline" subscriptSizing="dynamic" class="example-full-width">
             <mat-label>Ім'я</mat-label>
             <input class="rounded-input" autocomplete="off"  type="name" matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher">
-            <mat-error *ngIf="emailFormControl.hasError('required')">
-            <strong>Required</strong>
-            </mat-error>
           </mat-form-field>
 
           <mat-form-field  appearance="outline" subscriptSizing="dynamic" class="example-full-width">
             <mat-label >Номер телефону</mat-label>
             <input class="rounded-input" autocomplete="off" type="tel" matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher">
-            <mat-error *ngIf="nameFormControl.hasError('required')">
-              <strong>Required</strong>
-            </mat-error>
+
           </mat-form-field>
         </form>
           
@@ -33,4 +28,3 @@
       
       </div>
   </div>
-  

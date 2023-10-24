@@ -99,4 +99,33 @@ export class CircleHeaderComponent implements OnInit {
     this.renderer.appendChild(this.heart.nativeElement, newElement);
   }
   ngOnInit(): void {}
+
+
+  scrollToCircleComponent() {
+    const targetElement = document.getElementById('circle-component');
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
+  scrollToMacarunsComponent() {
+    const targetElement = document.getElementById('makaruns-component');
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
+  scrollToAboutUsComponent() {
+    const targetElement = document.getElementById('aboutUs-component');
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
+  scrollToContactFromComponent() {
+    const targetElement = document.getElementById('contact-component');
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 }

@@ -1,11 +1,11 @@
 <div class="header-circle-container">
   <!-- ToDo: change to mat menu -->
   <div #header class="header flex">
-    <h2 class="noselect assort" (click)="addHeart()">Асортимент</h2>
-    <h2 class="noselect">Макарунс</h2>
+    <h2 class="noselect assort" (click)="scrollToCircleComponent()">Асортимент</h2>
+    <h2 class="noselect" (click)="scrollToMacarunsComponent()">Макарунс</h2>
     <s class="spacer"></s>
-    <h2 class="noselect">Про нас</h2>
-    <h2 class="noselect">Замовити</h2>
+    <h2 class="noselect" (click)="scrollToAboutUsComponent()">Про нас</h2>
+    <h2 class="noselect" (click)="scrollToContactFromComponent()">Замовити</h2>
     <img class="instagram" src="{{ headerInstaImagePath }}" alt="" />
     <h2 class="noselect">
       <div class="text-wrapper-4">🇺🇦</div>
@@ -20,7 +20,7 @@
   </div>
   <img class="waves" src="../../../../assets/wave.svg" />
 </div>
-<div class="circle-animation-box">
+<div class="circle-animation-box" id="circle-component">
   <div class="cake-circle-container">
     <div class="pan"></div>
  
