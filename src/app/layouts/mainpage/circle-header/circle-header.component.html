@@ -1,11 +1,11 @@
 <div class="header-circle-container">
   <!-- ToDo: change to mat menu -->
   <div #header class="header flex">
-    <h2 class="noselect assort" (click)="scrollToCircleComponent()">Асортимент</h2>
-    <h2 class="noselect" (click)="scrollToMacarunsComponent()">Макарунс</h2>
+    <h2 class="noselect assort" (click)="scrollToCircleComponent()" i18n>Асортимент</h2>
+    <h2 class="noselect" (click)="scrollToMacarunsComponent()" i18n>Макарунс</h2>
     <s class="spacer"></s>
-    <h2 class="noselect" (click)="scrollToAboutUsComponent()">Про нас</h2>
-    <h2 class="noselect" (click)="scrollToContactFromComponent()">Замовити</h2>
+    <h2 class="noselect" (click)="scrollToAboutUsComponent()" i18n>Про нас</h2>
+    <h2 class="noselect" (click)="scrollToContactFromComponent()" i18n>Замовити</h2>
     <img class="instagram" src="{{ headerInstaImagePath }}" alt="" />
     <h2 class="noselect">
       <div class="text-wrapper-4">🇺🇦</div>
@@ -76,16 +76,16 @@
     <div class="navigation-bar">
       <!--<img class="vector" alt="Vector" src="{{ vectorImagePath }}" />-->
 
-      <div class="nav-bar-element">Торти</div>
-      <div class="nav-bar-element">Чізкейки</div>
-      <div class="nav-bar-element">Тістечка</div>
-      <div class="nav-bar-element">Капкейки</div>
+      <div class="nav-bar-element" i18n>Торти</div>
+      <div class="nav-bar-element" i18n>Чізкейки</div>
+      <div class="nav-bar-element" i18n>Тістечка</div>
+      <div class="nav-bar-element" i18n>Капкейки</div>
     </div>
 
     <div class="cake-info">
       <div class="cake-info-text">
-        <h1 class="bold">Медовик</h1>
-        <span>
+        <h1 class="bold" i18n>Медовик</h1>
+        <span i18n>
           Ніжні медові коржі у поєднанні із заварним кремом. <br />
           <br />
           Виконується на будь-який смак: класичний, фісташковий, з чорносливом,

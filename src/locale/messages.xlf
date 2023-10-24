@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="uk-UK" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="7201082368357731623" datatype="html">
+        <source> Весь асортимент</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layouts/assortment/assortment.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="734052542419831499" datatype="html">
+        <source>Торти</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layouts/assortment/assortment.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layouts/mainpage/circle-header/circle-header.component.html</context>
+          <context context-type="linenumber">79</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1168801536965442758" datatype="html">
+        <source>Чізкейки</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layouts/assortment/assortment.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layouts/mainpage/circle-header/circle-header.component.html</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8875669867501211464" datatype="html">
+        <source>Тістечка</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layouts/assortment/assortment.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layouts/mainpage/circle-header/circle-header.component.html</context>
+          <context context-type="linenumber">81</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="789719258768181221" datatype="html">
+        <source>Капкейки</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layouts/assortment/assortment.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layouts/mainpage/circle-header/circle-header.component.html</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="187187500641108332" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{ textName[i] }}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layouts/assortment/assortment.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layouts/assortment/assortment.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layouts/assortment/assortment.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layouts/mainpage/macaruns/macaruns.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layouts/mainpage/macaruns/macaruns.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5893733212052391770" datatype="html">
+        <source>НА ГОЛОВНУ</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layouts/assortment/assortment.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1718626648435785800" datatype="html">
+        <source>Сімейна кондитерська</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layouts/mainpage/about-us/about-us.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="541136065035941543" datatype="html">
+        <source>Mari Bakery - це подорож в світ десертів, над якою особисто чаклує Марина Барінова, майстриня кондитерського мистецтва з 10-річним досвідом.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layouts/mainpage/about-us/about-us.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4291842286662669770" datatype="html">
+        <source>Наше кредо: свіжі продукти, перевірені рецепти, і найважливіше - індивідуальний підхід до кожного замовлення. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layouts/mainpage/about-us/about-us.component.html</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="226762878802517247" datatype="html">
+        <source>Ми вкладаємо натхнення та досвід у виготовлення кожного десерту. Від узгодження замовлення до підбору ідеальних інгредієнтів та найкрасивішого декору - усе для того, щоб втілити будь-які солодкі фантазії.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layouts/mainpage/about-us/about-us.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6924780058618355022" datatype="html">
+        <source>Ласкаво запрошуємо до Mari Bakery, де солодощі створюються з любов&apos;ю та майстерністю.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layouts/mainpage/about-us/about-us.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7974519124581508877" datatype="html">
+        <source>Збери бокс з улюблених смаків</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layouts/mainpage/box-of-best-taste/box-of-best-taste.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6888498720875516490" datatype="html">
+        <source>ЗРОБИТИ ЗАМОВЛЕННЯ</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layouts/mainpage/box-of-best-taste/box-of-best-taste.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layouts/mainpage/car/car.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layouts/mainpage/contact-form/contact-form.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2722784900114613610" datatype="html">
+        <source>Як зробити замовлення</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layouts/mainpage/calendar/calendar.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4538632034771432673" datatype="html">
+        <source>Ми з радістю проконсультуємо вас щодо замовлення та втілимо найсміливіші фантазії</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layouts/mainpage/calendar/calendar.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3622551864757974919" datatype="html">
+        <source>Безкоштовна доставка</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layouts/mainpage/car/car.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4644166971368122566" datatype="html">
+        <source> При замовленні від 300zl - доставка в подарунок</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layouts/mainpage/car/car.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="885195204001847171" datatype="html">
+        <source>Асортимент</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layouts/mainpage/circle-header/circle-header.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7125025275634312700" datatype="html">
+        <source>Макарунс</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layouts/mainpage/circle-header/circle-header.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2663122898086293723" datatype="html">
+        <source>Про нас</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layouts/mainpage/circle-header/circle-header.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3106183744742844158" datatype="html">
+        <source>Замовити</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layouts/mainpage/circle-header/circle-header.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4751685290874527572" datatype="html">
+        <source>Медовик</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layouts/mainpage/circle-header/circle-header.component.html</context>
+          <context context-type="linenumber">87</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5258651138167136325" datatype="html">
+        <source> Ніжні медові коржі у поєднанні із заварним кремом. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> Виконується на будь-який смак: класичний, фісташковий, з чорносливом, шоколадний <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/>80zł/kg </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layouts/mainpage/circle-header/circle-header.component.html</context>
+          <context context-type="linenumber">88,95</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5554395388536546654" datatype="html">
+        <source>Бажаєте зробити замовлення або отримати консультацію?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layouts/mainpage/contact-form/contact-form.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9093854578726885239" datatype="html">
+        <source>Залиште ваші контакти</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layouts/mainpage/contact-form/contact-form.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6805869692195624219" datatype="html">
+        <source>Ім&apos;я</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layouts/mainpage/contact-form/contact-form.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1530814939356615770" datatype="html">
+        <source>Номер телефону</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layouts/mainpage/contact-form/contact-form.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4950435507827185097" datatype="html">
+        <source> Макарунси</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layouts/mainpage/macaruns/macaruns.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layouts/mainpage/macaruns/macaruns.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="693549872622433115" datatype="html">
+        <source>Та будь-який смак:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layouts/mainpage/macaruns/macaruns.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layouts/mainpage/macaruns/macaruns.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

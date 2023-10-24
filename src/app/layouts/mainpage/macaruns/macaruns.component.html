@@ -1,12 +1,12 @@
 <div class="normal" id="makaruns-component">
 <mat-grid-list cols="5" rowHeight="1:1" >
-    <mat-grid-tile-header class="text-center"> Макарунси</mat-grid-tile-header>
+    <mat-grid-tile-header class="text-center" i18n> Макарунси</mat-grid-tile-header>
     
     <mat-grid-tile *ngFor="let imagePath of imagePaths; let i = index">
         <div class="image-container" (mouseenter)="isBlurred[i] = true" (mouseleave)="isBlurred[i] = false">
             <img [src]="imagePath" alt="Image {{ i + 1 }}" class="image" [ngClass]="{ 'blur': isBlurred[i] }">
-            <div class="image-text">{{ textDescriptions[i] }}</div>
-            <div class="image-text-click" *ngIf="isBlurred[i]">Та будь-який смак:</div>
+            <div class="image-text" i18n>{{ textDescriptions[i] }}</div>
+            <div class="image-text-click" *ngIf="isBlurred[i]" i18n>Та будь-який смак:</div>
           </div>
     </mat-grid-tile>
 
@@ -16,14 +16,14 @@
 </div>
 <div class="mobile" id="makaruns-component">
     <mat-grid-list cols="2" rowHeight="1:1">
-        <mat-grid-tile-header class="text-center" > Макарунси</mat-grid-tile-header>
+        <mat-grid-tile-header class="text-center" i18n> Макарунси</mat-grid-tile-header>
         
         <div class="image-container" *ngFor="let imagePath of imagePaths; let i = index">
             <mat-grid-tile>
                 <div (mouseenter)="isBlurred[i] = true" (mouseleave)="isBlurred[i] = false">
                     <img [src]="imagePath" alt="Image {{ i + 1 }}" class="image" [ngClass]="{ 'blur': isBlurred[i] }">
-                    <div class="image-text">{{ textDescriptions[i] }}</div>
-                    <div class="image-text-click" *ngIf="isBlurred[i]">Та будь-який смак:</div>
+                    <div class="image-text" i18n>{{ textDescriptions[i] }}</div>
+                    <div class="image-text-click" *ngIf="isBlurred[i]" i18n>Та будь-який смак:</div>
                 </div>
             </mat-grid-tile>
         </div>
