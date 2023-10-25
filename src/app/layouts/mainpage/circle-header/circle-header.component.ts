@@ -20,6 +20,7 @@ export class CircleHeaderComponent implements OnInit {
     imagePath.imagePath + 'vector-4.svg'
   );
   public logoMainImagePath = new String(imagePath.imagePath + 'logo-main.png');
+  public wavesImagePath = new String(imagePath.imagePath + 'wave.svg');
   public logoMainLayoutImagePath = new String(
     imagePath.imagePath + 'logo-main-layout.png'
   );
