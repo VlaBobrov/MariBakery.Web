@@ -45,6 +45,7 @@ export class CircleHeaderComponent implements OnInit {
     this.circe3ImagePath,
     this.circe4ImagePath,
   ];
+  isDesktop = false;
 
   getAnimationStyle(index: number): any {
     if (index === this.currentImageIndex) {
@@ -52,6 +53,14 @@ export class CircleHeaderComponent implements OnInit {
     } else {
       return {};
     }
+  }
+
+  getDevice() {
+    const regex_mobile = new RegExp(
+      /Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile/,
+      'i'
+    );
+    this.isDesktop = !regex_mobile.test(window.navigator.userAgent);
   }
 
   get currentImagePath(): String {
@@ -98,8 +107,9 @@ export class CircleHeaderComponent implements OnInit {
     // Append the new element to the container
     this.renderer.appendChild(this.heart.nativeElement, newElement);
   }
-  ngOnInit(): void {}
-
+  ngOnInit(): void {
+    this.getDevice();
+  }
 
   scrollToCircleComponent() {
     const targetElement = document.getElementById('circle-component');
