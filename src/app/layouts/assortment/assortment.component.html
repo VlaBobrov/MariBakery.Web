@@ -34,6 +34,19 @@
         </mat-grid-tile>
     </mat-grid-list>
 
+    <mat-grid-list cols="1" rowHeight="2:1"  [gutterSize]="'15px'" class="mobile">        
+        <mat-grid-tile *ngFor="let imagePath of imagePaths; let i = index">
+            <div class="image-container">
+                <img [src]="currentImage === i ? defaultImagePath :imagePath " alt="Image {{ i + 1 }}" class="image" (mouseover)="changeImage(i)" (mouseout)="resetImage()">
+                <div class="image-text">
+                    <div class="image-text-name" i18n>{{ textName[i] }}</div>
+                    <div class="image-text-description" i18n>{{ textDescriptions[i] }}</div>
+                    <div class="image-text-price" i18n>{{ textPrice[i] }}</div>
+                </div>
+
+            </div>
+        </mat-grid-tile>
+    </mat-grid-list>
     <div class="button-div">
         <button class="submit-button" [routerLink]="'/mainpage'" i18n>НА ГОЛОВНУ</button>
     

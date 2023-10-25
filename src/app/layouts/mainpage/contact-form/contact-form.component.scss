@@ -117,7 +117,7 @@ h2{
   max-height: 100%;
 }
 
-@media screen and (max-device-width: 390px) {
+@media screen and (max-device-width: 420px) {
 
    .submit-button mdc-button mdc-button--raised mat-mdc-raised-button mat-primary mat-mdc-button-base {
       height: 62px !important;  
@@ -127,7 +127,7 @@ h2{
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    height: 70%; 
+    height: 90%; 
     max-width: 100%;
     background-color: #d189c7;
   }

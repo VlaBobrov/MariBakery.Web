@@ -154,3 +154,34 @@ button.submit-button {
   padding-bottom: 90px;
 
 }
+.mobile{
+  display: none;
+}
+@media screen and (max-device-width: 420px) {
+
+  .header{
+    padding-left: 5%;
+  }
+  .image-container{
+    width: 40rem;
+  }
+  .image-text-name,
+  .image-text-description,
+  .image-text-price,
+  .image-text{
+    font-size: 18px;
+  }
+  .list{
+    display: none;
+  }
+  .mobile{
+    display: block;
+    position: relative;
+  }
+  .assortment-container{
+    background: #F2F0F0;
+    padding-left: 0%;
+    padding-right: 0%;
+    margin-top: 218px;
+  }
+}
