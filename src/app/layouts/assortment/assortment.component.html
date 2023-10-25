@@ -1,6 +1,6 @@
 <div class="navbar-header">
 
-    <div  class="text-center"> Весь асортимент</div>
+    <div  class="text-center"  i18n> Весь асортимент</div>
 
     <button [routerLink]="'/mainpage'" class="circle-button">
             
@@ -8,10 +8,10 @@
 
 <div class="header flex">
 
-    <h2 class="noselect">Торти</h2>
-    <h2 class="noselect">Чізкейки</h2>
-    <h2 class="noselect">Тістечка</h2> 
-    <h2 class="noselect">Капкейки</h2>
+    <h2 class="noselect"  i18n>Торти</h2>
+    <h2 class="noselect"  i18n>Чізкейки</h2>
+    <h2 class="noselect"  i18n>Тістечка</h2> 
+    <h2 class="noselect"  i18n>Капкейки</h2>
 
 </div>
 </div>
@@ -25,9 +25,9 @@
             <div class="image-container">
                 <img [src]="currentImage === i ? defaultImagePath :imagePath " alt="Image {{ i + 1 }}" class="image" (mouseover)="changeImage(i)" (mouseout)="resetImage()">
                 <div class="image-text">
-                    <div class="image-text-name">{{ textName[i] }}</div>
-                    <div class="image-text-description">{{ textDescriptions[i] }}</div>
-                    <div class="image-text-price">{{ textPrice[i] }}</div>
+                    <div class="image-text-name" i18n>{{ textName[i] }}</div>
+                    <div class="image-text-description" i18n>{{ textDescriptions[i] }}</div>
+                    <div class="image-text-price" i18n>{{ textPrice[i] }}</div>
                 </div>
 
             </div>
@@ -35,7 +35,7 @@
     </mat-grid-list>
 
     <div class="button-div">
-        <button class="submit-button" [routerLink]="'/mainpage'">НА ГОЛОВНУ</button>
+        <button class="submit-button" [routerLink]="'/mainpage'" i18n>НА ГОЛОВНУ</button>
     
     </div>
 </div>

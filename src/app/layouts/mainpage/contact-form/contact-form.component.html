@@ -4,26 +4,26 @@
       </div>
 
       <div class="contact-form">
-        <h1 class="bold">Бажаєте зробити замовлення або отримати консультацію?</h1>
+        <h1 class="bold" i18n>Бажаєте зробити замовлення або отримати консультацію?</h1>
         
-        <h2>Залиште ваші контакти</h2>
+        <h2 i18n>Залиште ваші контакти</h2>
         
         <div class="form-container">
 
         <form class="example-form">
           <mat-form-field  appearance="outline" subscriptSizing="dynamic" class="example-full-width">
-            <mat-label>Ім'я</mat-label>
+            <mat-label i18n>Ім'я</mat-label>
             <input class="rounded-input" autocomplete="off"  type="name" matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher">
           </mat-form-field>
 
           <mat-form-field  appearance="outline" subscriptSizing="dynamic" class="example-full-width">
-            <mat-label >Номер телефону</mat-label>
+            <mat-label i18n>Номер телефону</mat-label>
             <input class="rounded-input" autocomplete="off" type="tel" matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher">
 
           </mat-form-field>
         </form>
           
-        <button class="submit-button" mat-raised-button color="primary">ЗРОБИТИ ЗАМОВЛЕННЯ</button>
+        <button class="submit-button" mat-raised-button color="primary" i18n>ЗРОБИТИ ЗАМОВЛЕННЯ</button>
         </div>
       
       </div>

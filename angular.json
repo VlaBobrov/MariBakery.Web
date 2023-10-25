@@ -4,6 +4,12 @@
   "newProjectRoot": "projects",
   "projects": {
     "MariBakery.Web": {
+      "i18n":{
+          "sourceLocale":"uk-UK",
+          "locales":{
+            "pl-PL": "src/locale/messages.pl.xlf"
+          }
+      },
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,6 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "localize": ["pl-PL"],
             "outputPath": "dist/mari-bakery.web",
             "index": "src/index.html",
             "main": "src/main.ts",
