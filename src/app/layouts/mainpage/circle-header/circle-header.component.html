@@ -14,13 +14,16 @@
       <h2 class="noselect" (click)="scrollToContactFromComponent()" i18n>
         Замовити
       </h2>
-      <img class="instagram" src="{{ headerInstaImagePath }}" alt="" />
+      <a [href]="'https://instagram.com/mari.bakery.wro?igshid=MzRlODBiNWFlZA=='">
+        <img  class="instagram" src="{{ headerInstaImagePath }}" alt="" />
+      </a>
       <h2 class="noselect">
         <div class="text-wrapper-4">🇺🇦</div>
       </h2>
     </div>
   </ng-container>
   <ng-template #mobile>
+
     <div class="menu-button"></div>
   </ng-template>
   <img #heart alt="" />
@@ -33,50 +36,21 @@
   <img class="waves" src="../../../../assets/wave.svg" />
 </div>
 <div class="circle-animation-box" id="circle-component">
+  
   <div class="cake-circle-container">
-    <div class="pan"></div>
 
-    <div
-      class="cake-circle"
-      [style.transform]="'rotate(' + rotationAngle + 'deg)'"
-    >
+    <div class="pan"></div>
+    <div class="cake-circle" [style.transform]="'rotate(' + rotationAngle + 'deg)'">
       <img
         class="cake-image"
         [src]="currentImagePath"
-        [style.transform]="'rotate(' + -rotationAngle * 3 + 'deg)'"
+        [style.transform]="'rotate(' +  -rotationAngle * 3 + 'deg)'"
       />
-    </div>
-    <!-- <div
-      class="cake-circle_2"
-      [style.transform]="'rotate(' + rotationAngle + 'deg)'"
-    >
-      <img
-        class="cake-image"
-        [src]="currentImagePath"
-        [style.transform]="'rotate(' + -rotationAngle * 3 + 'deg)'"
-      />
-    </div>
-    <div
-      class="cake-circle_3"
-      [style.transform]="'rotate(' + rotationAngle + 'deg)'"
-    >
-      <img
-        class="cake-image"
-        [src]="currentImagePath"
-        [style.transform]="'rotate(' + -rotationAngle * 3 + 'deg)'"
-      />
-    </div>
-    <div
-      class="cake-circle_4"
-      [style.transform]="'rotate(' + rotationAngle + 'deg)'"
-    >
-      <img
-        class="cake-image"
-        [src]="currentImagePath"
-        [style.transform]="'rotate(' + -rotationAngle * 3 + 'deg)'"
-      />
-    </div> -->
+
   </div>
+   
+  </div>
+
 
   <div class="circle-animation-navigation">
     <!-- ToDo: change to mat tabs -->

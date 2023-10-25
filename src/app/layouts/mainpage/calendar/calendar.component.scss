@@ -40,3 +40,16 @@ h2 {
     padding-top: 20px;
     padding-bottom: 3%;
 }
+.mobile{
+    display: none;
+}
+@media screen and (max-device-width: 420px) {
+
+.mobile{
+    display: block;
+    position: relative;
+}
+.normal{
+    display: none;
+}
+}

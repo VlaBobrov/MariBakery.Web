@@ -26,7 +26,7 @@ img {
   display: none;
 }
 
-@media screen and (max-device-width: 390px) {
+@media screen and (max-device-width: 420px) {
 
   .footer{
     display: none;
@@ -73,6 +73,10 @@ img {
     width: 100%; /* Line spans the full width */
     height: 2px; /* Adjust the line thickness as needed */
     background-color: white; /* Set the line's color */
+  }
+
+  .social a{
+    color: white;
   }
 }
 

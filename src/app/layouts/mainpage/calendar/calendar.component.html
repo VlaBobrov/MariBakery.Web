@@ -6,14 +6,19 @@
         </div>
 
         
-        <mat-grid-list cols="4" rowHeight="1:1" [gutterSize]="'25px'">
+        <mat-grid-list cols="4" rowHeight="1:1" [gutterSize]="'25px'" class="normal">
             <mat-grid-tile><img src="{{ calendar1ImagePath }}" alt="Image 1" /></mat-grid-tile>
             <mat-grid-tile><img src="{{ calendar2ImagePath }}" alt="Image 2" /></mat-grid-tile>
             <mat-grid-tile><img src="{{ calendar3ImagePath }}" alt="Image 3" /></mat-grid-tile>
             <mat-grid-tile><img src="{{ calendar4ImagePath }}" alt="Image 4" /></mat-grid-tile>
           </mat-grid-list>
              
-
+          <mat-grid-list cols="2" rowHeight="1:1" [gutterSize]="'25px'" class="mobile">
+            <mat-grid-tile><img src="{{ calendar1ImagePath }}" alt="Image 1" /></mat-grid-tile>
+            <mat-grid-tile><img src="{{ calendar2ImagePath }}" alt="Image 2" /></mat-grid-tile>
+            <mat-grid-tile><img src="{{ calendar3ImagePath }}" alt="Image 3" /></mat-grid-tile>
+            <mat-grid-tile><img src="{{ calendar4ImagePath }}" alt="Image 4" /></mat-grid-tile>
+          </mat-grid-list>
          <div class="text-bot">
             <h2  i18n>Ми з радістю проконсультуємо вас щодо замовлення та втілимо найсміливіші фантазії</h2>
 

@@ -67,13 +67,15 @@ export class CircleHeaderComponent implements OnInit {
     return this.imagePaths[this.currentImageIndex];
   }
 
+
   onArrowLeftClick(): void {
     this.rotateImage(-360); // Rotate counterclockwise by 360 degrees
     setTimeout(() => {
+    
       this.currentImageIndex =
         (this.currentImageIndex - 1 + this.imagePaths.length) %
         this.imagePaths.length;
-    }, 400);
+    }, 300);
   }
 
   onArrowRightClick(): void {
@@ -81,7 +83,7 @@ export class CircleHeaderComponent implements OnInit {
     setTimeout(() => {
       this.currentImageIndex =
         (this.currentImageIndex + 1) % this.imagePaths.length;
-    }, 400);
+    }, 300);
   }
 
   rotateImage(angle: number): void {
